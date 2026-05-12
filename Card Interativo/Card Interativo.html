@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Interativo</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+        }
+        .card{
+            width: 400px;
+            background:blanchedalmond;
+            border-radius: 20px;
+            padding: 90px; 
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 1.0);
+            transition: 0.3s ease;
+        }
+        .card:hover{
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 1.5);
+        }
+        .card img{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: solid bisque;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .card h2{
+            margin-bottom: 10px;
+            color: black;
+        }
+        .card p{
+            color: black;
+            margin-bottom: 20px;
+        }
+        .card button{
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            background: orange;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        .card button:hover{
+            background: burlywood
+        }
+    </style>
+
+</head>
+<body>
+    <div class="card">
+        <img src="WhatsApp Image 2026-05-11 at 18.25.09.jpeg" alt="Foto de Perfil">
+        <h2>Gustavo Henrique</h2>
+        <p>Estagário de Data Science na Havan</p>
+        <button>Entrar em Contato</button>
+    </div>
+</body>
+</html>
